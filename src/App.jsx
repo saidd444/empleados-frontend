@@ -4,7 +4,7 @@ function App() {
     const [personas, setPersonas] = useState([])
 
 useEffect(() => {
-    fetch('http://localhost:8080/personas')
+fetch('https://empleados-api-2xmp.onrender.com/personas')
         .then(response => response.json())
         .then(data => setPersonas(data))
 }, [])
